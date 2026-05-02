@@ -1,0 +1,135 @@
+.container_principal {
+  background: linear-gradient(90deg, #00b4fc, #f7a29e, #b05574);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  
+}
+
+.container_login {
+  width: 600px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow:
+    rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.container_cabecalho_login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+.container_cabecalho_login h2 {
+  color: #323435;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 15px;
+}
+
+.titulo_login {
+  display: flex;
+  align-items: center;
+}
+.titulo_login h1 {
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+
+  background: linear-gradient(90deg, #00b4fc, #f7a29e, #b05574);
+  background-clip: text;
+  color: transparent;
+}
+
+.container_form_login {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin: 40px auto;
+}
+
+.container_form_login label {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.input_tela {
+  width: 100%;
+  height: 45px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  margin-top: 8px;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+.input_tela input {
+  width: 90%;
+  border: none;
+  outline: none;
+}
+
+.botao_tela {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  background-color: #00b4fc;
+  color: #fff;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+.botao_tela:hover {
+  color: #faeeef;
+  padding: 10px;
+  background-color: #5ed1ff;
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+.instrucao_login {
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #323435;
+}
+
+/* centraliza o icone do alerta de mensagem */
+.swal_icon_center {
+  margin: 10px auto;
+  font-size: 15px;
+}
+
+@media (max-width: 700px) {
+  .container_login {
+    width: 85%;
+    height: auto;
+  }
+  .titulo_login {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .container_cabecalho_login h2 {
+    padding-left: 2px;
+    margin-top: 10px;
+  }
+  .instrucao_login {
+    text-align: center;
+  }
+  .container_form_login{
+    width: 80%;
+  }
+  .container_input_tela {
+    width: 90%;
+  }
+}
