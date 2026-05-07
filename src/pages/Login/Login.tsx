@@ -17,7 +17,7 @@ function Login() {
       event.preventDefault();
 
       const resposta = await fetch("http://localhost:3000/api/users/login", {
-        method: "post",
+        method: "POST",
         body: JSON.stringify({
           cpf: cpf,
           senha: senha,
@@ -35,21 +35,11 @@ function Login() {
 
       localStorage.setItem("@nome-do-usuario", dados.dados.nome);
 
-      Swal.fire({
-        icon: "success",
-        title: "CREDENCIAIS VALIDADAS",
-        text: dados.mensagem,
-
-        // Centraliza o icone do alerta de mensagem
-        customClass: {
-          icon: "swal_icon_center",
-        },
-      });
-
-      navegar("/Pets");
-
       setCpf("");
       setSenha("");
+
+      navegar("/Pets");
+      
     } catch (erro) {
       Swal.fire({
         icon: "error",
