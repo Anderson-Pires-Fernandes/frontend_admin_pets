@@ -1,0 +1,391 @@
+body {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.saudacao_usuario {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #323435;
+}
+.container_principal_listagem {
+  margin: 40px auto;
+  max-width: 1200px;
+}
+
+.container_cabecalho_listagem {
+  margin-top: 40px;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.subtitulo_listagem {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #323435;
+}
+
+.container_busca_listagem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+.container_input {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 20px;
+  padding: 10px 15px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 90%;
+}
+.container_input input {
+  border: none;
+  outline: none;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container_botoes_filtro {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 50%;
+  padding-left: 20px;
+}
+.botao_filtro {
+  padding: 8px;
+  font-size: 15px;
+  border-radius: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  background-color: #b05574;
+  border: 2px solid #b05574;
+  cursor: pointer;
+  max-width: 120px;
+  transition: 0.3s;
+}
+.botao_filtro:hover {
+  opacity: 0.9;
+  transform: scale(1.1);
+}
+.botao_filtro:active {
+  transform: scale(0.95);
+}
+
+.botao_filtro_ativo {
+  background-color: #f7a29e;
+  border-color: #b05574;
+}
+.botao_filtro_ativo:hover {
+  background-color: #f7a29e;
+}
+
+.pet_card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  width: 97%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 30px;
+  box-shadow:
+    rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.pet_cabecalho_card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pet_info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.pet_foto {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #00b4fc;
+}
+
+.container_informacoes_pet {
+  display: flex;
+  flex-direction: column;
+}
+.container_informacoes_pet h2 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.container_informacoes_pet p {
+  color: #666;
+  margin-top: 8px;
+  font-size: 15px;
+}
+
+.pet_quantidade_solicitações {
+  background-color: #00b4fc;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.pet_descricao {
+  background: #ededed;
+  margin-top: 15px;
+  padding: 18px;
+  color: #323435;
+  border-radius: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.pet_tabela_adoçoes h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #323435;
+  font-size: 20px;
+  margin-top: 25px;
+}
+
+.pet_tabela_adoçoes table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 18px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pet_tabela_adoçoes th,
+.pet_tabela_adoçoes td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.pet_tabela_adoçoes th {
+  background-color: #f8f9fa;
+  font-weight: bold;
+  color: #323435;
+  text-transform: uppercase;
+}
+
+.pet_tabela_adoçoes td {
+  color: #666;
+  padding: 20px;
+}
+.pet_tabela_adoçoes a {
+  background-color: #25d366;
+  color: #fff;
+  padding: 7px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  max-width: 180px;
+  cursor: pointer;
+}
+
+.pet_tabela_adoçoes a:hover {
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .container_botoes_filtro {
+    flex-direction: column;
+  }
+  .botao_filtro {
+    padding: 10px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container_principal_listagem {
+    padding: 0 15px;
+  }
+
+  .container_cabecalho_listagem {
+    padding-left: 0;
+    margin-top: 20px;
+  }
+
+  .subtitulo_listagem {
+    font-size: 16px;
+  }
+
+  .container_busca_listagem {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    padding: 0 10px;
+  }
+
+  .container_input {
+    width: 100%;
+    margin: 0;
+  }
+
+  .container_input input {
+    width: 100%;
+  }
+
+  .container_botoes_filtro {
+    flex-wrap: wrap;
+
+    align-items: center;
+    gap: 10px;
+  }
+
+  .pet_card {
+    width: 100%;
+    padding: 16px;
+  }
+
+  .pet_cabecalho_card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .pet_info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .pet_quantidade_solicitações {
+    padding: 8px 14px;
+  }
+
+  .pet_descricao {
+    margin-top: 14px;
+    padding: 16px;
+  }
+
+  .pet_tabela_adoçoes {
+    overflow-x: auto;
+    margin-top: 18px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .pet_tabela_adoçoes table {
+    width: 100%;
+    overflow-x: auto;
+    border-collapse: collapse;
+  }
+
+  .pet_tabela_adoçoes th,
+  .pet_tabela_adoçoes td {
+    padding: 10px 12px;
+    font-size: 13px;
+    word-break: break-word;
+    white-space: normal;
+  }
+
+  .pet_tabela_adoçoes a {
+    max-width: 100px;
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .pet_tabela_adoçoes table {
+    display: block;
+  }
+
+  .pet_tabela_adoçoes thead,
+  .pet_tabela_adoçoes th {
+    display: none;
+  }
+
+  .pet_tabela_adoçoes tbody,
+  .pet_tabela_adoçoes tr {
+    display: block;
+  }
+
+  .pet_tabela_adoçoes tr {
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 12px;
+    background-color: #fff;
+  }
+
+  .pet_tabela_adoçoes td {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+
+  .pet_tabela_adoçoes td:last-child {
+    border-bottom: none;
+  }
+
+  .pet_tabela_adoçoes td:nth-child(1):before {
+    content: "Nome";
+    font-weight: 700;
+    color: #323435;
+  }
+  .pet_tabela_adoçoes td:nth-child(2):before {
+    content: "Telefone";
+    font-weight: 700;
+    color: #323435;
+  }
+  .pet_tabela_adoçoes td:nth-child(3):before {
+    content: "Moradia";
+    font-weight: 700;
+    color: #323435;
+  }
+  .pet_tabela_adoçoes td:nth-child(4):before {
+    content: "Imóvel";
+    font-weight: bold;
+    color: #323435;
+  }
+  .pet_tabela_adoçoes td:nth-child(5):before {
+    content: "Pessoas";
+    font-weight: 700;
+    color: #323435;
+  }
+  .pet_tabela_adoçoes td:nth-child(6):before {
+    content: "Data";
+    font-weight: 700;
+    color: #323435;
+  }
+  .pet_tabela_adoçoes td:nth-child(7):before {
+    content: "Ações";
+    font-weight: 700;
+    color: #323435;
+  }
+
+  .pet_tabela_adoçoes td:before {
+    text-transform: uppercase;
+    font-size: 11px;
+  }
+}
