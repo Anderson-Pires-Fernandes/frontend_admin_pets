@@ -33,6 +33,8 @@ function Login() {
         throw new Error(dados.erro);
       }
 
+      localStorage.setItem("@nome-do-usuario", dados.dados.nome);
+
       Swal.fire({
         icon: "success",
         title: "CREDENCIAIS VALIDADAS",
@@ -48,8 +50,7 @@ function Login() {
 
       setCpf("");
       setSenha("");
-    } 
-    catch (erro) {
+    } catch (erro) {
       Swal.fire({
         icon: "error",
         title: "ERRO",

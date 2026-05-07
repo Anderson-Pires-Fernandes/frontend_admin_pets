@@ -92,9 +92,11 @@
 .botao_tela:hover {
   color: #faeeef;
   padding: 10px;
-  background-color: #5ed1ff;
-  transition: 0.3s;
+  background-color: #5ed1ff; 
   transform: scale(1.1);
+}
+.botao_tela:active{
+  transform: scale(0.95);
 }
 
 .instrucao_login {
