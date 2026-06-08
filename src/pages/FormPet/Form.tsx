@@ -2,7 +2,7 @@ import Menu from "../../components/Menu";
 
 import Swal from "sweetalert2";
 
-import { useNavigate } from "react-router";
+import { Link, useNavigate } from "react-router";
 import { useState } from "react";
 
 import "./Form.css";
@@ -24,7 +24,7 @@ function Form() {
     try {
       event.preventDefault();
 
-      const resposta = await fetch("http://localhost:3000/api/Pet", {
+      const resposta = await fetch("http://localhost:3000/api/Pets", {
         method: "POST",
         body: JSON.stringify({
           nome: nome,
@@ -59,7 +59,6 @@ function Form() {
       });
 
       navegar("../Pets");
-      
     } catch (erro) {
       Swal.fire({
         icon: "error",
@@ -80,9 +79,9 @@ function Form() {
       <div className="container_form_cadastro">
         <div className="cabecalho_form_cadastro">
           <h2 className="titulo_listagem">Cadastro de Pet</h2>
-          <a className="link_voltar" href="../Pets">
+          <Link className="link_voltar" to="/Pets">
             ⟵ Voltar
-          </a>
+          </Link>
         </div>
 
         <div className="container_informacoes_pet_form">
@@ -90,7 +89,11 @@ function Form() {
             <h2>Informações Gerais do Pet</h2>
             <div className="container_imagem_pet_form_cadastro">
               {imagem ? (
-                <img className="imagem_pet_form_cadastro" src={imagem} />
+                <img
+                  className="imagem_pet_form_cadastro"
+                  alt="foto-do-pet"
+                  src={imagem}
+                />
               ) : (
                 <div className="imagem_placeholder">
                   📷
