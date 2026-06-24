@@ -1,0 +1,230 @@
+.container_form_cadastro {
+  max-width: 1000px;
+  margin: 40px auto;
+}
+.cabecalho_form_cadastro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link_voltar {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  color: #fff;
+  background-color: #00b4fc;
+  padding: 9px;
+  border-radius: 10px;
+}
+.link_voltar:hover {
+  opacity: 0.6;
+  transform: scale(1.1);
+}
+
+.link_voltar:active {
+  transform: scale(0.95);
+}
+
+.container_informacoes_pet_form {
+  background-color: #fff;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.informacoes_pet_form {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  border: 1px solid #ccc;
+}
+.informacoes_pet_form h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  position: absolute;
+  top: -10px; /* sobe o elemento */
+  left: 20px; /* move pra direita */
+  background: #fff;
+  padding: 0 10px;
+}
+
+.container_imagem_pet_form_cadastro {
+  background-color: #f8f9fa;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.imagem_pet_form_cadastro {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  box-shadow: 0 0 12px #007bff80;
+  margin: 20px;
+  object-fit: cover;
+}
+
+.imagem_placeholder {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  box-shadow: 0 0 12px #007bff80;
+  margin: 20px;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #666;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.imagem_placeholder small {
+  font-size: 10px;
+  margin-top: 4px;
+}
+
+.container_campos_form_cadastro {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+.campo_form_cadastro {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.campo_form_cadastro label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+}
+.campo_form_cadastro input {
+  height: 23px;
+  padding-left: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.campo_form_cadastro select {
+  height: 27px;
+  padding-left: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+}
+
+.descricao_form_cadastro {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 20px;
+}
+.descricao_form_cadastro label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+}
+.descricao_form_cadastro textarea {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  resize: none;
+  min-height: 100px;
+  padding: 10px;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container_botao_salvar_form {
+  display: flex;
+  margin-top: 20px;
+  justify-content: end;
+}
+.container_botao_salvar_form button {
+  padding: 8px;
+  width: 100px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 20px;
+  border: 2px solid #faada9;
+  background: linear-gradient(150deg, #00b4fc, #f7a29e);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.container_botao_salvar_form button:active {
+  transform: scale(0.95);
+}
+.container_botao_salvar_form button:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .container_form_cadastro {
+    margin: 20px 16px;
+    max-width: 100%;
+  }
+
+  .link_voltar {
+    font-size: 10px;
+    padding: 7px;
+  }
+
+  .container_informacoes_pet_form {
+    margin: 20px auto;
+    padding: 16px;
+  }
+
+  .informacoes_pet_form {
+    width: 100%;
+    padding: 16px;
+  }
+
+  .container_imagem_pet_form_cadastro {
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+
+  .imagem_pet_form_cadastro {
+    width: 80px;
+    height: 80px;
+    margin: 16px 0;
+  }
+
+  .container_campos_form_cadastro {
+    flex-direction: column;
+  }
+
+  .campo_form_cadastro {
+    width: 100%;
+  }
+
+  .campo_form_cadastro input,
+  .campo_form_cadastro select,
+  .descricao_form_cadastro textarea {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .descricao_form_cadastro {
+    margin-top: 16px;
+  }
+
+  .container_botao_salvar_form {
+    justify-content: center;
+  }
+
+  .container_botao_salvar_form button {
+    width: 100%;
+    max-width: 100px;
+  }
+}
