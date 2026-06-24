@@ -7,9 +7,9 @@ Um painel administrativo (*Admin Dashboard*) moderno e responsivo desenvolvido p
 ### 📸 Demonstração das Telas
 
 <p align="center">
-  <img src="./assets/tela_login.png" width="30%" alt="Tela de Dashboard / Painel Principal" />
-  <img src="./assets/tela_pets.png" width="30%" alt="Tela de Listagem de Pets" />
-  <img src="./assets/tela_pets_cadastro.png" width="30%" alt="Tela de Cadastro / Edição" />
+  <img src="src/assets/tela_login.png" width="30%" alt="Tela de Dashboard / Painel Principal" />
+  <img src="src/assets/tela_pets.png" width="30%" alt="Tela de Listagem de Pets" />
+  <img src="src/assets/tela_pets_cadastro.png" width="30%" alt="Tela de Cadastro / Edição" />
 </p>
 
 ---
@@ -50,12 +50,12 @@ Para rodar este projeto na sua máquina, você precisará ter o **Git** e o **No
 ```bash
 git clone [https://github.com/Anderson-Pires-Fernandes/frontend_admin_pets.git](https://github.com/Anderson-Pires-Fernandes/frontend_admin_pets.git)
 
-2. **Acesse a pasta do projeto:**
+2. Acesse a pasta do projeto:
  cd frontend_admin_pets
 
-3. **Instale as dependências:**
+3. Instale as dependências:
 Instale as dependências:
 npm install
 
-4. **Inicie o servidor de desenvolvimento:**
+4. Inicie o servidor de desenvolvimento:
 npm run dev
