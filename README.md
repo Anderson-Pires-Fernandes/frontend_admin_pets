@@ -49,3 +49,17 @@ Para rodar este projeto na sua máquina, você precisará ter o **Git** e o **No
 1. **Clone o repositório:**
 ```bash
 git clone [https://github.com/Anderson-Pires-Fernandes/frontend_admin_pets.git](https://github.com/Anderson-Pires-Fernandes/frontend_admin_pets.git)
+```
+
+2. **Acesse a pasta do projeto:**
+```bash
+ cd frontend_admin_pets
+```
+3. **Instale as dependências:**
+```bash
+ npm install
+```
+4. **Inicie o servidor de desenvolvimento:**
+```bash
+ npm run dev
+```
